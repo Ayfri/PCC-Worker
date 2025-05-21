@@ -1,4 +1,4 @@
-import { ScheduledEvent, ExecutionContext } from '@cloudflare/workers-types';
+import { ScheduledEvent, ExecutionContext, fetch, console } from '@cloudflare/workers-types';
 
 interface Env {
 	// If you want to secure the call with a secret (recommended)
