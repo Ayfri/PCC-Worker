@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"module": "esnext",
-		"lib": ["esnext", "webworker"],
+		"lib": ["esnext", "webworker", "dom"],
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
