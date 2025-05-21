@@ -1,3 +1,5 @@
+import { ScheduledEvent, ExecutionContext } from '@cloudflare/workers-types';
+
 interface Env {
 	// If you want to secure the call with a secret (recommended)
 	// CRON_SECRET: string;
