@@ -4,6 +4,7 @@ interface Env {
 	// If you want to secure the call with a secret (recommended)
 	// CRON_SECRET: string;
 	PAGES_FUNCTION_URL: string; // e.g., 'https://yourproject.pages.dev/regenerate-assets'
+	PCC_TOKEN: string;
 }
 
 export default {
@@ -13,9 +14,9 @@ export default {
 		try {
 			const response = await fetch(env.PAGES_FUNCTION_URL, {
 				method: 'POST', // Or 'GET' if your function doesn't modify anything (but here it does)
-				// headers: { // Uncomment if you use a secret
-				// 'X-Custom-Cron-Secret': env.CRON_SECRET,
-				// },
+				headers: {
+					'PCC_TOKEN': env.PCC_TOKEN,
+				},
 			});
 
 			if (response.ok) {
