@@ -10,3 +10,6 @@ PAGES_FUNCTION_URL = "https://<YOUR_PAGES_PROJECT_NAME>.pages.dev/regenerate-ass
 # Example: Run every day at 3 AM UTC. Adjust as needed.
 # See https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 crons = ["0 3 * * *"]
+
+[observability.logs]
+enabled = true
